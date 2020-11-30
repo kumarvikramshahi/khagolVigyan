@@ -1,0 +1,121 @@
+/* **I for index */
+@media only screen and (min-width: 900px){
+    #darkModePC{
+         position: relative;   
+    }
+ }
+ @media only screen and (max-width: 900px) and (min-width: 700px){
+    #darkModePC{
+        position: relative;   
+   }
+}
+@media only screen and (max-width: 700px){
+    #darkModePC{
+        display: none;
+        position: relative;
+    }
+}
+.body{
+    background-image: url(images/bgpic.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+@media only screen and (min-width: 770px){
+   #pic_container {
+       display: grid;
+       grid-gap: 0.5%;
+       grid-template-columns: repeat(2, minmax(10px, 1fr));
+       width: 80%;
+       margin: auto 10% auto 10%;
+    }
+    #article_container {
+        margin: auto 12% auto 12%;
+        font-family: "Lucida Sans Unicode",sans-serif;
+        font-size: 1.15em;
+        word-spacing: 0.1vw;
+    }
+}
+@media only screen and (max-width: 770px){
+    #pic_container {
+        display: grid;
+        grid-gap: 0.5%;
+        grid-template-columns: repeat(2, minmax(10px, 1fr));
+        width: 100%;
+    }
+    #article_container {
+        padding: 1%;
+        font-family: "Lucida Sans Unicode",sans-serif;
+        font-size: 1.05em;
+        word-spacing: 0.1vw;
+    }
+}
+#darkModePC > span {
+    display: none;
+    position: absolute;
+    top: 105%;
+    right: 0px;
+    color: black;
+    background-color: rgb(209, 190, 190);
+    padding: 1px;
+    width: 168%;
+}
+#darkModePC:hover span{
+    display: inline-block;
+    z-index: inherit;
+}
+#h1I {
+    font-size: 7vw;
+    text-transform: uppercase;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    margin: 8px auto;
+    text-align: center;
+    text-shadow: 0px 0px 10px black; 
+    letter-spacing: 2vw;
+}
+.image {
+    position: relative;
+    padding: 2px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.pic_text {
+    display: none;
+    color: white;
+    position: absolute;
+    bottom: -10px;
+    left: 3%;
+}
+.image:hover .pic_text {
+    display: block;
+}
+hr{
+    margin: 0.5% 3.5%;
+    background-color: purple;
+    height: 2.5px;
+}
+#funFact {
+    font-family: cursive;
+    color: darkslateblue;
+    text-align: center;
+}
+#facts {
+    border: 2px solid black;
+    border-radius: 15px;
+    background-image:  url("facts.webp");
+    background-size: cover;
+    background-origin:  content-box;
+    background-repeat: no-repeat;
+}
+.factText{
+    font-weight: 500;
+    color: black;
+    word-wrap: break-word;
+}
+.content_link {
+    display: inline-block;
+    text-align: center;
+    font-weight: 600;
+    margin: 1%
+}

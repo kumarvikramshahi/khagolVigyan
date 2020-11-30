@@ -1,0 +1,292 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+}
+/* logo and navigation bar */
+#logo {
+    margin: 0px;
+    background-color: black;
+    color: white;
+    font-size: 255%;
+    padding: 8px 20px ;
+    letter-spacing: 1.5px;
+    font-family: monospace;
+}
+#logo:hover{
+    background-color: white;
+    color: black;
+}
+@media only screen and (min-width: 900px){
+.navInPC{
+    display: inline-block;
+} 
+.nav_mobile{
+    display: none;
+}
+#navToggleHide{
+    display: none;
+}
+}
+@media only screen and (max-width: 900px) and (min-width: 700px){
+.navInPC{
+    display: inline-block;
+}   
+.nav_mobile{
+    display: none;
+}
+#navToggleHide{
+    display: none;
+}
+}
+@media only screen and (max-width: 700px){
+ .nav-toggle{
+    font-weight: 900;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 10%;
+    padding: 14px 10px;
+    margin: auto 2px auto 0px;
+    width: 12.5%;
+    cursor: pointer;
+ }
+ .nav-toggle:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+ }
+ #navToggleHide{
+    display: none;
+    padding: 14px;
+    font-weight: bolder;
+    color: white;
+    z-index: 2;
+    position: absolute;
+    cursor: pointer;
+ }
+ #navToggleHide:hover{
+    background-color: white;
+    color: black;
+ }
+ .nav_pc{
+    display:none;
+ }
+ .inlineBlockNav{
+    display: inline-block;
+ }  
+}
+nav {
+  background-color: white;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  box-shadow: 0px 5px 20px black;
+}
+.nav-link{
+    text-decoration: none;
+    color: black;
+    margin: -0.5px -2px;
+    padding: 14px 22px;
+    font-weight: 600; 
+    cursor: pointer; 
+}
+.nav-link:hover{
+    background-color: black;
+    color: white;
+} 
+.collapseList{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    list-style-type: none;
+    width: 100%;
+    height: 80vh;
+    padding: 10px 0px auto 20px;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+}
+.navTopicGrid{
+    display: grid;
+    grid-gap: 3%;
+    grid-template-columns:repeat(auto-fit, minmax(110px, 1fr));
+}
+.navTopicTopic{
+    padding: 10px;
+    font-size: large;
+    text-align: center;
+}
+#navTopicHide{
+    float: right;
+    padding: 14px;
+    font-weight: bolder;
+}
+#navTopicHide:hover{
+    background-color: white;
+    color: black;
+}
+.navBgColor{
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+}
+.navTopicLink{
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.navTopicLink:hover{
+    background-color: white;
+    color: black;
+} 
+
+/* header image, its text and quote... */
+#h1_container {
+    margin: -0.5px auto auto -1px;
+    position:relative;
+}
+#h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%,-100%);
+    font-size: 5.5vw;
+    text-transform: uppercase;
+    color: white;
+    font-family:sans-serif;
+    text-shadow: 2px 2px 30px black,2px 2px 30px black,2px 2px 30px black,2px 2px 30px black,2px 2px 15px black,2px 2px 15px black,2px 2px 15px black,2px 2px 15px black,2px 2px 15px black,2px 2px 15px black,2px 2px 15px black,2px 2px 15px black,2px 2px 15px black,2px 2px 15px black,2px 2px 15px black,2px 2px 15px black,2px 2px 15px black,2px 2px 15px black,2px 2px 15px black;
+    letter-spacing: 6.5px;
+}
+.quote {
+    border: 2px solid grey;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+    font-size: 110%;
+}
+/* card and its paragraphs with preview buttons... */
+@media only screen and (min-width: 900px){
+.card_container {
+    margin: 2.5% 10%; 
+    width: 80%;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+#cosmos{
+    width: 80%;
+    margin: auto;
+}
+.btn_hide{
+    display: none;
+}
+}
+@media only screen and (max-width: 900px) and (min-width: 700px){
+.card_container {
+    margin-top: 2.5%; 
+    width: 100%;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+#cosmos{
+    width: 80%;
+    margin: auto;
+}
+.btn_hide{
+    display: none;
+}
+}
+
+@media only screen and (max-width: 700px){
+.card_container { 
+    margin-top: 3%;
+    width: 100%;
+    display: block;
+    position: relative;
+}
+#cosmos{
+    position: relative;
+    width: 100%;
+}
+.paragraph_show{
+    display: none;
+    position: absolute;
+    bottom: 8%;
+    right: 5px;
+    width: 85%;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.945);
+    box-shadow: -2px -2px 10px blue;
+    color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size: 80%;
+}
+.preview_btn {
+    margin-left: 50%;
+    transform: translate(-50%);
+} 
+}
+.card_link {
+    text-decoration:none;
+    color: purple;
+}
+.card_link:hover {
+    border-bottom: 1.5px solid black;
+}
+.paragraph {
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 0px;
+    font-family: sans-serif;
+}
+.black_bg {
+   background-color: black;
+    padding-bottom: 12px;
+    color: white;
+}
+.button {
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(255,255,255,0.4),-2px 1px 10px black,1px -2px 10px black;
+    border: 0px solid black;
+    border-radius: 28px;
+    padding: 2px;
+    width: 100px;
+    height: 29px;
+}
+.button:active {
+    box-shadow: 0px 0px 0px transparent;
+}
+.hide_preview {
+    display: none;
+}
+/* contact and footer... */
+.contact {
+    background-color: rgba(196, 186, 186, 0.65);
+    font-family: courier;
+}
+footer {
+    text-align: center;
+    color: darkmagenta;
+    margin: 5px;
+}
+.follow {
+    padding: 15px;
+    text-align: center;
+}
+#email {
+    color: #983798;
+    word-wrap: break-word;
+    font-weight: 600;
+}
